@@ -34,8 +34,7 @@ calcScore winner = sum [ v*n | (v,n) <- zip (reverse winner) [1..] ]
 
 main :: IO()
 main = do
-    file <- openFile "22-input    file <- openFile "22-ex.txt" ReadMode
-.txt" ReadMode
+    file <- openFile "22-input.txt" ReadMode
     -- file <- openFile "22-ex.txt" ReadMode
     cont <- hGetContents file
     let line    = lines cont
